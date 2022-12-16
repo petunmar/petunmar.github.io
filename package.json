@@ -1,0 +1,22 @@
+{
+  "name": "petunmar.com",
+  "version": "1.0.0",
+  "description": "Personal website hosted by Github Pages.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petunmar/petunmar.github.io.git"
+  },
+  "author": "petunmar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petunmar/petunmar.github.io/issues"
+  },
+  "homepage": "https://github.com/petunmar/petunmar.github.io#readme",
+  "devDependencies": {
+    "eslint": "^8.29.0"
+  }
+}

@@ -1,7 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Pétur Már Sigurðsson</title>
+    <meta name="description" content="Hi I'm Pétur! Welcome to my personal website. I'm a web developer and been coding for half
+    my lifetime by now. Currently I'm the CTO of Cliezen, a company I founded with my friend Kári Thor Rúnarsson. Here I'll probably
+    share some stuff when I feel like it - or not.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="Pétur Már Sigurðsson's personal website">
+    <meta property="og:type" content="profile">
+    <meta property="og:image" content="https://petunmar.com/img/og-image.jpg">
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+
+    <link rel="icon" href="img/favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/favicon.png">
+
+    <meta name="theme-color" content="#fafafa">
+
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 1rem;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-size-adjust: 100%;
+            padding: 20px;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>One day I'm gonna be a big website like the others.</p>
+    <h1>RE: Regarding the website you stumbled upon</h1>
+    <p>
+        Welcome to my personal website. I'm a <span id="age">22</span> year old software developer, innovator and tech bro.
+        When I was 11 years old I got my own PC, in my bedroom, unsupervised. So I did what every other 11 year old would do,
+        started programing. So I've been programming now for approximately <span id="programmingYears">11</span> years
+        (and counting). That is more than half my lifetime, <span id="programmingProportion">50</span>% to be exact.
+    </p>
+    <p>
+        Currently I'm the CTO of <a href="https://www.cliezen.com/">Cliezen</a>, a company I founded with my friend
+        Kári Thor Rúnarsson. While working for previous companies I've realized that customers value nothing more than
+        being heard. So that's why we created Cliezen. Because the best way to make someone feel heard, is to simply ask them
+        to share.
+    </p>
+    <p>
+        I'll probaly share some stuff on this site when I feel like it - or not.
+    </p>
+    <p>
+        Best regards, <br>
+        Pétur Már Sigurðsson, a Professional Tech Bro
+    </p>
+    <script>
+        function main() {
+            const age = Math.round((Date.now() - 958380600000) / (1000 * 60 * 60 * 24 * 365.25) * 10000000) / 10000000
+            const programmingYears =  Math.round((age - 11.1234365) * 10000000) / 10000000
+            document.getElementById('age').innerHTML = age
+            document.getElementById('programmingYears').innerHTML = programmingYears
+            document.getElementById('programmingProportion').innerHTML = Math.round((programmingYears / age * 100) * 10000) / 10000
+        }
+
+        main()
+        setInterval(main, 1000)
+    </script>
 </body>
 </html>
