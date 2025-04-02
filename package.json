@@ -4,6 +4,8 @@
   "description": "Personal website hosted by Github Pages.",
   "main": "index.html",
   "scripts": {
+    "dev": "http-server -c-1 -o -p 8080 --cors",
+    "start": "http-server -c-1 -o -p 8080 --cors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/petunmar/petunmar.github.io#readme",
   "devDependencies": {
-    "eslint": "^8.29.0"
+    "eslint": "^8.29.0",
+    "http-server": "^14.1.1"
   }
 }

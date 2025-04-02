@@ -1,0 +1,178 @@
+/* Font configurations */
+
+/* Main headings and titles - Kudry */
+h1, .title {
+  font-family: 'KudryWebWeirdHeadline', serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+/* Subtitles, dates, numbers and miscellaneous info - Noto Sans Mono */
+h2, .subtitle, .date, .number, .info {
+  font-family: "Noto Sans Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* Paragraphs and text - Noto Sans */
+p, .text {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* Font weight variations */
+.noto-sans-mono-thin {
+  font-weight: 100;
+}
+
+.noto-sans-mono-light {
+  font-weight: 300;
+}
+
+.noto-sans-mono-regular {
+  font-weight: 400;
+}
+
+.noto-sans-mono-medium {
+  font-weight: 500;
+}
+
+.noto-sans-mono-bold {
+  font-weight: 700;
+}
+
+.noto-sans-mono-black {
+  font-weight: 900;
+}
+
+.noto-sans-thin {
+  font-weight: 100;
+}
+
+.noto-sans-light {
+  font-weight: 300;
+}
+
+.noto-sans-regular {
+  font-weight: 400;
+}
+
+.noto-sans-medium {
+  font-weight: 500;
+}
+
+.noto-sans-bold {
+  font-weight: 700;
+}
+
+.noto-sans-black {
+  font-weight: 900;
+}
+
+/* Base styles */
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  padding: 0;
+  margin: 0;
+  background: whitesmoke;
+}
+
+/* Hero section */
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url('./img/orchids.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  justify-content: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero h1 {
+  font-size: 6rem;
+  color: white;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  line-height: 0.9;
+}
+
+.hero h2 {
+  color: white;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.linkedin-link {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  transition: transform 0.2s ease;
+}
+
+.linkedin-link:hover {
+  transform: translateX(-50%) scale(1.1);
+}
+
+.linkedin-icon {
+  width: 32px;
+  height: 32px;
+  fill: white;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Content section */
+.content {
+  padding: 20px;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #222;
+    color: whitesmoke;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+} 
